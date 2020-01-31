@@ -373,7 +373,7 @@ export function loadSync(
   // and wrappers. compiler/plugin is excluded in Protobuf.js and here.
   const wellKnownProtos = ['api', 'descriptor', 'source_context', 'type'];
   const sourceDir = path.join(
-    path.dirname(require.resolve('protobufjs')),
+    path.dirname(__non_webpack_require__.resolve('protobufjs')),
     'google',
     'protobuf'
   );
